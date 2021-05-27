@@ -36,4 +36,9 @@ class StringCalculatorTest {
     public void unknownAmountOfNumbersTest(){
         assertEquals(tst.add("10,20,30,40,50,60,70"),280);
     }
+
+    @Test
+    public void newLineCharacterTest1(){
+        assertEquals(tst.add("30\n40,50"),120);
+    }
 }
