@@ -19,7 +19,9 @@ public class StringCalculator {
             if (val < 0) {
                 negatives.add(xx);
             }
-            sum += val;
+            if(val<=1000) {
+                sum += val;
+            }
         }
         if (!negatives.isEmpty()) {
             throw new IllegalArgumentException(
