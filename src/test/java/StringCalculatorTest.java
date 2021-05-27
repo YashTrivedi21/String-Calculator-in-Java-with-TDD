@@ -46,4 +46,20 @@ class StringCalculatorTest {
     public void supportForCustomDelimiter() {
         assertEquals(233, tst.add("//;\n123;29;37;44"));
     }
+
+    @Test
+    public void negativeNotAllowedTest() {
+        try {
+            tst.add("-1,2");
+        }
+        catch (IllegalArgumentException e){
+            assertEquals(e.getMessage(), "Negatives not allowed -1");
+        }
+        try {
+            tst.add("2,-4,3,-5");
+        }
+        catch (IllegalArgumentException e){
+            assertEquals(e.getMessage(), "Negatives not allowed -4,-5");
+        }
+    }
 }
