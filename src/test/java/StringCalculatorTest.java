@@ -31,4 +31,9 @@ class StringCalculatorTest {
     public void twoNumbersTest() {
         assertEquals(tst.add("4,9"), 13);
     }
+
+    @Test
+    public void unknownAmountOfNumbersTest(){
+        assertEquals(tst.add("10,20,30,40,50,60,70"),280);
+    }
 }
