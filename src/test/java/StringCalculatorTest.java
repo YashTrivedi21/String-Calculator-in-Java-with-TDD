@@ -1,8 +1,6 @@
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class StringCalculatorTest {
 
@@ -66,5 +64,20 @@ class StringCalculatorTest {
     @Test
     public void moreThanThousandNumberTest(){
         assertEquals(1090,tst.add("20,30,40,1000,10100"));
+    }
+
+    @Test
+    public void variableLengthDelimiterTest1(){
+        assertEquals(6,tst.add("//[@@@]\n1@@@2@@@3"));
+    }
+
+    @Test
+    public void variableLengthDelimiterTest2(){
+        assertEquals(6,tst.add("//[--]\n1--2--3"));
+    }
+
+    @Test
+    public void variableLengthDelimiterTest3(){
+        assertEquals(6,tst.add("//[-@-]\n1-@-2-@-3"));
     }
 }
