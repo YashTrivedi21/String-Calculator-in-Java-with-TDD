@@ -41,4 +41,9 @@ class StringCalculatorTest {
     public void newLineCharacterTest1(){
         assertEquals(tst.add("30\n40,50"),120);
     }
+
+    @Test
+    public void supportForCustomDelimiter() {
+        assertEquals(233, tst.add("//;\n123;29;37;44"));
+    }
 }
