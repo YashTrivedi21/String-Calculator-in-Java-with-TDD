@@ -1,0 +1,22 @@
+<idea-plugin>
+<!--    <id>org.example.StringCalculator</id>-->
+<!--    <name>Plugin display name here</name>-->
+<!--    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>-->
+
+<!--    <description><![CDATA[-->
+<!--    String Calculator.<br>-->
+<!--    <em>most HTML tags may be used</em>-->
+<!--    ]]></description>-->
+
+<!--    &lt;!&ndash; please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html-->
+<!--         on how to target different products &ndash;&gt;-->
+<!--    <depends>com.intellij.modules.platform</depends>-->
+
+<!--    <extensions defaultExtensionNs="com.intellij">-->
+<!--        &lt;!&ndash; Add your extensions here &ndash;&gt;-->
+<!--    </extensions>-->
+
+<!--    <actions>-->
+<!--        &lt;!&ndash; Add your actions here &ndash;&gt;-->
+<!--&lt;!&ndash;    </actions>&ndash;&gt;-->
+</idea-plugin>
