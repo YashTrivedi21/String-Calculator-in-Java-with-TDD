@@ -80,4 +80,9 @@ class StringCalculatorTest {
     public void variableLengthDelimiterTest3(){
         assertEquals(6,tst.add("//[-@-]\n1-@-2-@-3"));
     }
+
+    @Test
+    public void multipleDelimiterTest(){
+        assertEquals(12,tst.add("//[-@-][&&][#]\n1-@-2&&3#6"));
+    }
 }
